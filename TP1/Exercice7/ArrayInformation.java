@@ -8,8 +8,12 @@ import java.util.Scanner;
 
 public class ArrayInformation {
 
-    public static final int MAX=10;
+    public static final int MAX=10;//Maximum de la taille de la liste (constante)
 
+    /**
+     * 
+     * @param numbers liste de nombre entrer par l'utilisateur
+     */
     public static void arrayInformationAverageMinAndMax(List<Integer> numbers){
         numbers.sort(Comparator.naturalOrder());
 
@@ -35,12 +39,16 @@ public class ArrayInformation {
 
         System.out.printf("Veuillez entrer %d valeurs entières:%n", MAX);
 
+        //Tant que la taille de la liste est inférieur a max
         while (numbers.size() < MAX) {
+            // Afficher dans la console a combien on est
             System.out.printf("Entrer une valeur (%d sur %d): ", numbers.size() + 1, MAX);
             try {
                 int value = scanner.nextInt();
+                // Ajoute l'entrer de l'utilisateur dans la liste
                 numbers.add(value);
             } catch (InputMismatchException e) {
+                // Renvoie un message dans la console si l'entrer n'est pas bonne et continue la boucle
                 System.out.println("La valeur entrée doit être un entier valide.");
                 scanner.next();
             }

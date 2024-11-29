@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class ReadTwoInt {
 
+    /**
+     * 
+     * @param a premier entier
+     * @param b deuxieme entier
+     * @return retourne la somme des valeurs a et b
+     */
     public static int sum(int a,int b){
         return a + b;
     }
@@ -12,6 +18,7 @@ public class ReadTwoInt {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        //Entrer les valeurs pour lesquels on veut la somme
         System.out.print("Entrer la valeur de a: ");
         int a = scanner.nextInt();
 

@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class Fibo1 {
 
+	/**
+	 * 
+	 * @param max
+	 * @return n-ième terme de la suite de Fibonacci
+	 */
     public static int fibonacci(int max) {
 		if (max <= 1) {
 			return max;

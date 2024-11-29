@@ -5,17 +5,32 @@ import java.util.Scanner;
 
 public class AverageOfTheTwoLargestNumbers {
 
+    /**
+     * 
+     * @param a entier entrer par l'utilisateur
+     * @param b entier entrer par l'utilisateur
+     * @param c entier entrer par l'utilisateur
+     */
     public static void averageOfTwoLargestNumber(int a, int b, int c) {
         int max1;
         int max2;
-    
+        
+        // Si a est supérieur ou égal a (b et c)
         if (a >= b && a >= c) {
             max1 = a;
+            
+            // On cherche la valeur max entre (b et c)
             max2 = Math.max(b, c);
-        } else if (b >= a && b >= c) {
+        }
+        // Sinon si b supérieur a (b et c)
+        else if (b >= a && b >= c) {
             max1 = b;
+
+            // On cherche le max entre (a et c)
             max2 = Math.max(a, c);
-        } else {
+        } 
+        // Sinon c et alors supérieur a (a et b)
+        else {
             max1 = c;
             max2 = Math.max(a, b);
         }
@@ -25,7 +40,7 @@ public class AverageOfTheTwoLargestNumbers {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
+        // Entrer les valeurs de chacune des variables (a b et c)
         try{
             System.out.print("Entrer la valeur du premier nombre: ");
 
