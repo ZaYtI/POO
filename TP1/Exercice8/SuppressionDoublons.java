@@ -14,7 +14,7 @@ public class SuppressionDoublons {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         List<Integer> numbers = new ArrayList<>();
-        boolean isFinish = false;
+        Boolean isFinish = false;
 
         System.out.println("Entrer toute les valeurs voulue dans votre tableau");
         while (!isFinish) {

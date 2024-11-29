@@ -32,7 +32,7 @@ public class Conjugation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         LinkedHashMap<String, String> pronomTerminaisonDict = initLinkedHashMap();
-        boolean isValidVerb = false;
+        Boolean isValidVerb = false;
         String verb = "";
 
         while (!isValidVerb) {
