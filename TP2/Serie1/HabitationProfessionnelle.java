@@ -23,7 +23,9 @@ public class HabitationProfessionnelle extends Habitation {
      */
     @Override
     public void affiche() {
+        // Affiche les infos du parents
         super.affiche();
+        // Affiche les informations supplémentaire
         System.out.println("Nombre d'employés : " + nbEmployes);
     }
 }

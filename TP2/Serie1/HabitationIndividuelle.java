@@ -25,7 +25,9 @@ public class HabitationIndividuelle extends Habitation {
      */
     @Override
     public void affiche() {
+        // Affiche les informations du parents
         super.affiche();
+        // Affiche les informations supplémentaire
         System.out.println("Nombre de pièces : " + nbPieces);
         System.out.println("Existence d'une piscine : " + (piscine ? "Oui" : "Non"));
     }

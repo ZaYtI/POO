@@ -24,6 +24,7 @@ public class Habitation {
      * Affiche toute les informations de la classe (propriétaire,adresse,surface)
      */
     public void affiche() {
+        // Affiche les informations de l'habitation
         System.out.println("Propriétaire : " + this.proprietaire);
         System.out.println("Adresse : " + this.adresse);
         System.out.println("Surface : " + this.surface + " m²");
